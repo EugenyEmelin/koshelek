@@ -15,7 +15,7 @@
     "dev:ssr": "quasar dev -m ssr",
     "build": "quasar build",
     "build:ssr": "quasar build -m ssr",
-    "deploy": "yarn build && gp-pages -d dist/spa"
+    "deploy": "yarn build && gh-pages -d dist/spa"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
