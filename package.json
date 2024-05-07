@@ -35,7 +35,6 @@
     "eslint-plugin-vue": "^9.0.0",
     "gh-pages": "6.1.1",
     "prettier": "^3.0.3",
-    "push-dir": "^0.4.1",
     "typescript": "~5.3.0",
     "vite-plugin-checker": "^0.6.4",
     "vue-tsc": "^1.8.22"
