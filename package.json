@@ -13,7 +13,8 @@
     "dev": "quasar dev",
     "dev:ssr": "quasar dev -m ssr",
     "build": "quasar build",
-    "build:ssr": "quasar build -m ssr"
+    "build:ssr": "quasar build -m ssr",
+    "deploy": "push-dir --dir=dist/spa --remote=gh-pages --branch=master"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vue": "^9.0.0",
     "prettier": "^3.0.3",
+    "push-dir": "^0.4.1",
     "typescript": "~5.3.0",
     "vite-plugin-checker": "^0.6.4",
     "vue-tsc": "^1.8.22"
