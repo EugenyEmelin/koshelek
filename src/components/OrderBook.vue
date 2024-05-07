@@ -79,7 +79,7 @@ const store = useCurrencySymbolStore()
 const columns: QTableColumn[] = [
   { name: 'price', label: 'Цена', field: 'price', align: 'left' },
   { name: 'quantity', label: 'Кол-во', field: 'quantity', align: 'left' },
-  { name: 'total', label: '', field: 'total', align: 'left' },
+  { name: 'total', label: 'Сумма', field: 'total', align: 'left' },
 ]
 
 const loading = computed(() => store.loading)
