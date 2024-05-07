@@ -1,0 +1,24 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "api/*": ["src/api/*"],
+      "constants/*": ["src/constants/*"],
+      "enums/*": ["src/constants/enums/*"],
+      "types/*": ["src/types/*"],
+      "router/*": ["src/router/*"],
+      "stores/*": ["src/stores/*"],
+      "utils/*": ["src/utils/*"],
+      "@services/*": ["services/*"]
+    }
+  },
+  "exclude": [
+    "./dist",
+    "./.quasar",
+    "./node_modules",
+    "./src-capacitor",
+    "./src-cordova",
+    "./quasar.config.*.temporary.compiled*"
+  ],
+}

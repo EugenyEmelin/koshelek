@@ -1,0 +1,24 @@
+// app global css in Sass form
+.static-screen
+  height: calc(100vh - $header-height * 2 - $order-book-header-height - $order-book-header-mb)
+  overflow: hidden
+
+.table-title
+  font-size: 18px
+  &--asks
+    color: $smooth-red
+  &--bids
+    color: $smooth-green
+  @media (max-width: $breakpoint-xs-max)
+    font-size: 16px
+
+.sticky-head
+  table thead tr th
+    background-color: #fff
+    position: sticky
+    z-index: 1
+  thead tr:first-child th
+    top: 0
+    left: 0
+    right: 0
+    background-color: #fff
