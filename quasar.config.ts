@@ -6,6 +6,7 @@
 
 import { configure } from 'quasar/wrappers'
 import path from 'node:path'
+import { mergeConfig } from 'vite'
 
 
 export default configure((/* ctx */) => {
@@ -45,6 +46,17 @@ export default configure((/* ctx */) => {
       target: {
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
+      },
+      extendViteConf(viteConf) {
+        viteConf.build = mergeConfig(viteConf.build || {}, {
+          base: '/koshelek'
+        })
+        // equivalent of following vite.config.js/vite.config.ts:
+        // export default defineConfig({
+        //   build: {
+        //     chunkSizeWarningLimit: 750
+        //   }
+        // })
       },
       alias: {
         api: path.join(__dirname, './src/api'),
